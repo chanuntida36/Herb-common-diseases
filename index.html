@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กลุ่มCommon Diseasesที่รักษาด้วยยาสมุนไพร</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #388E3C;
+            --secondary-color: #A5D6A7;
+            --text-color: #424242;
+            --bg-color: #E8F5E9;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .main-heading {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .symptom-card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .symptom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .symptom-card-icon {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .symptom-card-icon img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .symptom-card h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        .last-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 2rem;
+            }
+            .symptoms-grid {
+                grid-template-columns: 1fr;
+            }
+            .last-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-text {
+                position: static;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="main-heading">กลุ่ม Common Diseases ที่รักษาด้วยยาสมุนไพร</h1>
+
+        <div class="symptoms-grid">
+            <a href="muscle_joint_pain.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="imagemuscle.jpg">
+                </div>
+                <h3>อาการปวดกล้ามเนื้อและปวดข้อ</h3>
+            </a>
+
+            <a href="cold_cough_covid.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="imagecough.jpg" alt="ไข้หวัด ไอ เสมหะ">
+                </div>
+                <h3>อาการไข้หวัด ไอ เสมหะ โควิด 19</h3>
+            </a>
+
+            <a href="Bloating.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="Bloating.jpg" alt="ท้องอืด/ท้องเฟ้อ">
+                </div>
+                <h3>อาการท้องอืด/ท้องเฟ้อ</h3>
+            </a>
+
+            <a href="diarrhea.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="imagediarrhea.jpg" alt="ท้องเสีย">
+                </div>
+                <h3>อาการท้องเสีย</h3>
+            </a>
+
+            <a href="constipation.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="constipation.jpg" alt="ท้องผูก/ริดสีดวงทวารหนัก">
+                </div>
+                <h3>อาการท้องผูก/ริดสีดวงทวารหนัก</h3>
+            </a>
+
+            <a href="dizziness.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="dizziness.jpg" alt="วิงเวียน/คลื่นไส้ อาเจียน">
+                </div>
+                <h3>อาการวิงเวียน/คลื่นไส้ อาเจียน</h3>
+            </a>
+
+            <a href="insomnia.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="insomnia.jpg" alt="นอนไม่หลับ">
+                </div>
+                <h3>อาการนอนไม่หลับ</h3>
+            </a>
+
+            <a href="anorexia.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="anorexia.jpg" alt="เบื่ออาหาร">
+                </div>
+                <h3>อาการเบื่ออาหาร</h3>
+            </a>
+        </div>
+
+        <div class="last-row">
+            <a href="paralysis.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="paralysis.jpg" alt="ชาจากอัมพฤกษ์-อัมพาต">
+                </div>
+                <h3>อาการชาจากอัมพฤกษ์-อัมพาต</h3>
+            </a>
+
+            <a href="skin_wound.html" class="symptom-card">
+                <div class="symptom-card-icon">
+                    <img src="skin_wound.jpg" alt="ทางผิวหนัง/แผล">
+                </div>
+                <h3>อาการทางผิวหนัง/แผล</h3>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer-text">
+        <p>จัดทำโดย พท.ชนัญธิดา ราษี</p>
+        <p>(แพทย์แผนไทยปฏิบัติการ)</p>
+    </div>
+
+</body>
+</html>
