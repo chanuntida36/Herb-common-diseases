@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลน้ํามันกัญชา</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #388E3C;
+            --secondary-color: #A5D6A7;
+            --text-color: #424242;
+            --bg-color: #E8F5E9;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .details-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .details-block {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .details-block h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .details-block h3 .en-text {
+            font-size: 1rem;
+            color: #757575;
+            font-weight: normal;
+        }
+
+        /* จัดตำแหน่งบล็อกตามที่ร้องขอ */
+        .block-1, .block-8 {
+            grid-column: 1 / -1; /* ครอบคลุมทั้งสองคอลัมน์ */
+        }
+
+        @media (min-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .block-1 {
+                grid-column: 1 / -1;
+            }
+            .block-2 {
+                grid-column: 1 / 2;
+            }
+            .block-3 {
+                grid-column: 2 / 3;
+            }
+            .block-4 {
+                grid-column: 1 / 2;
+            }
+            .block-5 {
+                grid-column: 2 / 3;
+            }
+            .block-6 {
+                grid-column: 1 / 2;
+            }
+            .block-7 {
+                grid-column: 2 / 3;
+            }
+            .block-8 {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        .source-info {
+            margin-top: 20px;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #757575;
+        }
+
+         /* เพิ่ม CSS สำหรับปุ่มกลับหน้าแรก */
+        .home-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .home-button {
+            padding: 10px 20px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-size: 1.1rem; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            box-shadow: none; /* ลบเงา */
+        }
+
+        .home-button:hover {
+            background-color: #2e7d32;
+            transform: none; /* ลบ transform */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="anorexia_details.html" class="back-button">← ย้อนกลับ</a>
+        <h1 class="main-heading">ยาน้ำมันกัญชาที่ผลิตจากช่อดอก ซึ่งยามี delta-9-tetrahydrocannabinol (THC) 2.0 มิลลิกรัม/มิลลิลิตร</h1>
+
+        <div class="details-grid">
+            <div class="details-block block-1">
+                <h3>สรรพคุณยา</h3>
+                <p>บรรเทาอาการปวดเรื้อรัง ช่วยให้นอนหลับ ช่วยให้เจริญอาหาร ในผู้ป่วยที่ได้รับการวินิจฉัยว่าเป็นมะเร็ง</p>
+            </div>
+
+            <div class="details-block block-2">
+                <h3>ขนาดและวิธีใช้<span class="en-text">(Dosage & Administration)</span></h3>
+                <p>หยดรับประทานครั้งละ 1 หยด ก่อนนอน หรือ ตามดุลพินิจของแพทย์แผนไทย แพทย์แผนไทยประยุกต์/แพทย์แผนปัจจุบันที่สั่งใช้ยาน้ำมันกัญชา, หากอาการไม่ดีขึ้น จากการติดตามอาการและประเมินผลให้ปรับขนาดยาเพิ่มขึ้นครั้งละ 1 - 2 หยด ทุก 1 สัปดาห์หรือระยะเวลาตามแพทย์แผนไทย/แพทย์แผนไทยประยุต์/แพทย์แผนปัจจุบันพิจารณา โดยขนาดสูงสุดไม่เกิน 20 หยด/วัน, หากอาการดีขึ้น จากการติดตามอาการและประเมินผลให้ปรับขนาดยาลดลง ครั้งละ 1 หยด ทุก 1 สัปดาห์ หรือเป็นระยะเวลาตามแพทย์แผนไทย/แพทย์แผนไทยประยุกต์/แพทย์แผนปัจจุบันพิจารณา</p>
+            </div>
+
+            <div class="details-block block-3">
+                <h3>ข้อห้ามใช้ <span class="en-text">(Contraindication)</span></h3>
+                <p>ห้ามใช้ในผู้ที่มีประวัติแพ้ผลิตภัณฑ์ที่ได้จากสารสกัดกัญชา หรือน้ำมันมะพร้าว, ห้ามใช้ในผู้ป่วยโรคหัวใจและหลอดเลือดขั้นรุนแรง หรือไม่สามารถคุมอาการได้, ห้ามใช้ในผู้ป่วยที่มีประวัติความผิดปกติทางจิตเวช, ห้ามใช้ในผู้ที่ใช้ยาละลายลิ่มเลือดวาร์ฟาริน, ห้ามใช้ในสตรีมีครรภ์หรือสตรีที่ให้นมบุตร   </p>
+            </div>
+
+            <div class="details-block block-4">
+                <h3>คำเตือน <span class="en-text">(Warning)</span></h3>
+                <p>ไม่มี</p>
+            </div>
+
+            <div class="details-block block-5">
+                <h3>อันตรกิริยาระหว่างสมุนไพรกับยา <span class="en-text">(Herb-Drug Interaction)</span></h3>
+                <p>ไม่มี</p>
+            </div>
+
+            <div class="details-block block-6">
+                <h3>ข้อควรระวัง <span class="en-text">(Precaution)</span></h3>
+                <p>ระวังการใช้ยาในผู้ที่ทำงานขับขี่ยานพาหนะ หรือเกี่ยวกับเครื่องจักรกลหรือทำงานที่เสี่ยงอันตราย เพราะยานี้อาจทำให้ง่วงซึม, ควรระมัดระวังการใช้ในบุคคลที่อายุต่ำกว่า 25 ปี, ควรระมัดระวังการใช้ในผู้ป่วยโรคตับและไต (มีค่าเอนไซม์ตับที่ผิดปกติสูงเกิน 3 เท่าของค่าบนปกติ, มีค่าอัตราการกรองของไต (GFR) น้อยกว่า 60 มิลลิลิตร/นาที/1.73 ตารางเมตร), ควรระมัดระวังการใช้ในผู้ป่วยที่มีประวัติของการใช้สารเสพติด รวมถึงนิโคติน หรือเป็นผู้ดื่มสุราอย่างหนัก ผู้ป่วยที่ใช้ยากล่อมประสาท หรือยาที่ออกฤทธิ์ทางจิตอื่นๆ หรือยาโรคประจำตัวเรื้อรังหลายชนิด</p>
+            </div>
+
+            <div class="details-block block-7">
+                <h3>อาการไม่พึงประสงค์ <span class="en-text">(Adverse reaction)</span></h3>
+                <p>ง่วงนอน ปากแห้ง เวียนศีรษะ คลื่นไส้</p>
+            </div>
+
+            <div class="details-block block-8">
+                <h3>สูตรตำรับ</h3>
+                <p>สารสกัดกัญชาในน้ำมันมะพร้าว ความเข้มข้น 10 % ของน้ำหนักช่อดอกกัญชาแห้ง ซึ่งมีปริมาณ THC 2.0 มิลลิกรัม/มิลลิลิตร</p>
+            </div>
+        </div>
+
+        <div class="source-info">
+            <p>แหล่งข้อมูล = บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ.2566</p>
+        </div>
+
+          <div class="home-button-container">
+            <a href="index.html" class="home-button">กลับหน้าแรก</a>
+        </div>
+    </div>
+
+</body>
+</html>
