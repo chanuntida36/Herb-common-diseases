@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลยาหอมนวโกฐ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #388E3C;
+            --secondary-color: #A5D6A7;
+            --text-color: #424242;
+            --bg-color: #E8F5E9;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .details-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .details-block {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .details-block h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .details-block h3 .en-text {
+            font-size: 1rem;
+            color: #757575;
+            font-weight: normal;
+        }
+
+        /* จัดตำแหน่งบล็อกตามที่ร้องขอ */
+        .block-1, .block-8 {
+            grid-column: 1 / -1; /* ครอบคลุมทั้งสองคอลัมน์ */
+        }
+
+        @media (min-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .block-1 {
+                grid-column: 1 / -1;
+            }
+            .block-2 {
+                grid-column: 1 / 2;
+            }
+            .block-3 {
+                grid-column: 2 / 3;
+            }
+            .block-4 {
+                grid-column: 1 / 2;
+            }
+            .block-5 {
+                grid-column: 2 / 3;
+            }
+            .block-6 {
+                grid-column: 1 / 2;
+            }
+            .block-7 {
+                grid-column: 2 / 3;
+            }
+            .block-8 {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        .source-info {
+            margin-top: 20px;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #757575;
+        }
+
+         /* เพิ่ม CSS สำหรับปุ่มกลับหน้าแรก */
+        .home-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .home-button {
+            padding: 10px 20px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-size: 1.1rem; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            box-shadow: none; /* ลบเงา */
+        }
+
+        .home-button:hover {
+            background-color: #2e7d32;
+            transform: none; /* ลบ transform */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="dizziness_details.html" class="back-button">← ย้อนกลับ</a>
+        <h1 class="main-heading">ยาหอมนวโกฐ</h1>
+
+        <div class="details-grid">
+            <div class="details-block block-1">
+                <h3>สรรพคุณยา</h3>
+                <p>แก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สงูอายุ, แก้ลมปลายไข้ (หลังจากฟื้นไข้แล้วยังมีอาการ เช่น คลื่นเหียน วิงเวียน เบื่ออาหาร ท้องอืดและอ่อนเพลีย)</p>
+            </div>
+
+            <div class="details-block block-2">
+                <h3>ขนาดและวิธีใช้<span class="en-text">(Dosage & Administration)</span></h3>
+                <p>ชนิดผง รับประทานครั้งละ 1 - 2 กรัม ละลายน้ำกระสาย เมื่อมีอาการ ทุก 3 - 4 ชั่วโมง ไม่ควรเกินวันละ 3 ครั้ง น้ำกระสายยาที่ใช้  กรณีแก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สงูอายุใช้น้ำลูกผักชี (15กรัม) หรือเทียนนดำ (15 กรัม) ต้มเป็นน้ำกระสายยา  กรณีแก้ลมปลายไข้ (หลังจากฟื้นไข้แล้วยังมีอาการเช่น คลื่นเหียน วิงเวียน เบื่ออาหาร ท้องอืด อ่อนเพลีย) ใช้ก้านสะเดา (33 ก้าน หรือ 15 กรัม) ลูกกระดอม (7 ลูก หรือ 15 กรัม) และเถาบอระเพ็ด (7 องคุลีหรือ 15 กรัม) ต้มเป็นน้ำกระสายยา  ถ้าหาน้ำกระสายยาไม่ได้ให้ใช้น้ำสุกแทน ชนิดเม็ด รับประทานครั้งละ 1 - 2 กรัม ทุก 3 - 4 ชั่วโมง เมื่อมีอาการ ไม่ควรเกินวันละ 3 คร้ัง</p>
+            </div>
+
+            <div class="details-block block-3">
+                <h3>ข้อห้ามใช้ <span class="en-text">(Contraindication)</span></h3>
+                <p>ห้ามใช้ในหญิงตั้งครรภ์ และผู้ที่มีไข้</p>
+            </div>
+
+            <div class="details-block block-4">
+                <h3>คำเตือน <span class="en-text">(Warning)</span></h3>
+                <p>ไม่มี</p>
+            </div>
+
+            <div class="details-block block-5">
+                <h3>อันตรกิริยาระหว่างสมุนไพรกับยา <span class="en-text">(Herb-Drug Interaction)</span></h3>
+                <p>ไม่มี</p>
+            </div>
+
+            <div class="details-block block-6">
+                <h3>ข้อควรระวัง <span class="en-text">(Precaution)</span></h3>
+                <p>ควรระวังการรับประทานร่วมกับยาในกลุ่มสารกันเลือดเป็นลิ่ม (anticoagulant) และยาต้านการจับตัวของเกล็ดเลือด (antiplatelets), ควรระวังการใช้กับผู้ป่วยที่มีประวัติแพ้เกสรดอกไม้</p>
+            </div>
+
+            <div class="details-block block-7">
+                <h3>อาการไม่พึงประสงค์ <span class="en-text">(Adverse reaction)</span></h3>
+                <p>อาการแสบร้อนบริเวณทางเดินอาหาร อาการระคายเคืองบริเวณปากและคอ</p>
+            </div>
+
+            <div class="details-block block-8">
+                <h3>สูตรตำรับ</h3>
+                <p>ในผงยา 212 กรัม ประกอบด้วย โกฐสอ โกฐเขมา โกฐหัวบัว โกฐเชียง โกฐจุฬาลัมพา โกฐกระดูก โกฐก้านพร้าว โกฐพุงปลา โกฐชฎามังสี หนักสิ่งละ 4 กรัม เทียนดำ เทียนแดง เทียนขาว เทียนข้าวเปลือก เทียนตาตั๊กแตน เทียนเยาวพาณี เทียนสัตตบุษย์ เทียนเกล็ดหอย เทียนตากบ หนักสิ่งละ 4 กรัม เปลือกสมุลแว้ง หญ้าตีนนก รากแฝกหอม เปลือกชะลูด หัวเปราะหอม กระลำพัก ขอนดอก เนื้อไม้กฤษณา หนักสิ่งละ 4 กรัม เหง้าขิงแห้ง ดอกดีปลี รากเจตมูลเพลิงแดง เถาสะค้าน รากช้าพลูหนัก สิ่งละ 3 กรัม หัวแห้วหมูลูกกระวาน ดอกกานพลู ดอกจันทน์ ลูกจันทน์ เปลือกอบเชยญวน ลูกผักชีลา แก่นสน หนักสิ่งละ 4 กรัม แก่นสักขี ลูกราชดัด ลูกสารพัดพิษ แก่นจันทน์เทศ แก่นจันทน์แดง ลูกกระดอม เถาบอระเพ็ด หนักสิ่งละ 4 กรัม เกสรบัวหลวง ดอกบุนนาค ดอกพิกุล ดอกสารภี ดอกมะลิ หนักสิ่งละ 4 กรัม เนื้อลูกมะขามป้อม เนื้อลูกสมอพิเภก รากชะเอมเทศ หนักสิ่งละ 4 กรัม พิมเสน หนัก 1 กรัม</p>
+            </div>
+        </div>
+
+        <div class="source-info">
+            <p>แหล่งข้อมูล = บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ.2566</p>
+        </div>
+
+          <div class="home-button-container">
+            <a href="index.html" class="home-button">กลับหน้าแรก</a>
+        </div>
+    </div>
+
+</body>
+</html>
