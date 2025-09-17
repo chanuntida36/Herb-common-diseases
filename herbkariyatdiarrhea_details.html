@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลยาฟ้าทะลายโจร (ส่วนเหนือดิน) (400mg./cap)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #388E3C;
+            --secondary-color: #A5D6A7;
+            --text-color: #424242;
+            --bg-color: #E8F5E9;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .details-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .details-block {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .details-block h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .details-block h3 .en-text {
+            font-size: 1rem;
+            color: #757575;
+            font-weight: normal;
+        }
+
+        /* จัดตำแหน่งบล็อกตามที่ร้องขอ */
+        .block-1, .block-8 {
+            grid-column: 1 / -1; /* ครอบคลุมทั้งสองคอลัมน์ */
+        }
+
+        @media (min-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .block-1 {
+                grid-column: 1 / -1;
+            }
+            .block-2 {
+                grid-column: 1 / 2;
+            }
+            .block-3 {
+                grid-column: 2 / 3;
+            }
+            .block-4 {
+                grid-column: 1 / 2;
+            }
+            .block-5 {
+                grid-column: 2 / 3;
+            }
+            .block-6 {
+                grid-column: 1 / 2;
+            }
+            .block-7 {
+                grid-column: 2 / 3;
+            }
+            .block-8 {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        .source-info {
+            margin-top: 20px;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #757575;
+        }
+
+         /* เพิ่ม CSS สำหรับปุ่มกลับหน้าแรก */
+        .home-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .home-button {
+            padding: 10px 20px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-size: 1.1rem; /* ขนาดเท่าปุ่มย้อนกลับ */
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            box-shadow: none; /* ลบเงา */
+        }
+
+        .home-button:hover {
+            background-color: #2e7d32;
+            transform: none; /* ลบ transform */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="diarrhea_details.html" class="back-button">← ย้อนกลับ</a>
+        <h1 class="main-heading">ยาฟ้าทะลายโจร (ส่วนเหนือดิน)</h1>
+
+        <div class="details-grid">
+            <div class="details-block block-1">
+                <h3>สรรพคุณยา</h3>
+                <p>บรรเทาอาการท้องเสียชนิดที่ไม่เกิดจากการติดเชื้อ เช่นอุจจาระไม่เป็นมูก</p>
+            </div>
+
+            <div class="details-block block-2">
+                <h3>ขนาดและวิธีใช้<span class="en-text">(Dosage & Administration)</span></h3>
+                <p>รับประทานครั้งละ 500 มิลลิกรัม - 2 กรัม วันละ 4 ครั้ง หลังอาหารและก่อนนอน</p>
+            </div>
+
+            <div class="details-block block-3">
+                <h3>ข้อห้ามใช้ <span class="en-text">(Contraindication)</span></h3>
+                <p>ห้ามใช้ในผู้ที่มีอาการแพ้ฟ้าทะลายโจร เช่น มีผื่น ปากบวม ตาบวม หน้าบวม, ห้ามใช้ในหญิงตั้งครรภ์และหญิงให้นมบุตร เนื่องจากอาจทำให้เกิดทารกวิรูปได้, ห้ามใช้ฟ้าทะลายโจรสำหรับแก้เจ็บคอในกรณีต่างๆ ต่อไปนี้   ผู้ป่วยที่มีอาการเจ็บคอเนื่องจากติดเชื้อ Streptococcus group A   ผู้ป่วยที่มีประวัติเป็นโรคไตอักเสบ เนื่องจากเคยติดเชื้อ Streptococcus group A   ผู้ป่วยที่มีประวัติเป็นโรคหัวใจรูมาติก   ผู้ป่วยที่มีอาการรุนแรง เช่น มีตุ่มหนองในคอ มีไข้สูง และหนาวสั่น</p>
+            </div>
+
+            <div class="details-block block-4">
+                <h3>คำเตือน <span class="en-text">(Warning)</span></h3>
+                <p>หากใช้ยานี้แล้วมีผื่น ปากบวม ตาบวม หน้าบวม ให้หยุดทันที และพบแพทย์</p>
+            </div>
+
+            <div class="details-block block-5">
+                <h3>อันตรกิริยาระหว่างสมุนไพรกับยา <span class="en-text">(Herb-Drug Interaction)</span></h3>
+                <p>ไม่มี</p>
+            </div>
+
+            <div class="details-block block-6">
+                <h3>ข้อควรระวัง <span class="en-text">(Precaution)</span></h3>
+                <p>หากใช้ติดต่อกันเป็นเวลานาน อาจทำให้แขนขามีอาการชาหรืออ่อนแรง, หากใช้ติดต่อกันเกิน 3 วัน แล้วไม่ดีขึ้นระหว่างการใช้ยาควรหยุดใช้และพบแพทย์, ควรระวังการใช้ยานี้ร่วมกับสารกันเลือดเป็นลิ่ม (anticoagulants) และยาต้านการจับตัวของเกล็ดเลือด (antiplatelets), ควรระวังการใช้ยานี้ร่วมกับยาลดความดันเลือดเพราะอาจเสริมฤทธิ์กันได้, ควรระวังการใช้ยานี้ร่วมกับยาที่กระบวนการเมแทบอลิซึม ผ่านเอนไซม์ Cytochrome P450 (CYP450) เนื่องจากจากฟ้าทะลายโจรมีฤทธิ์ยับยั้งเอนไซม์ CYP1A2, CYP2C9 และ CYP3A4, ควรระวังการใช้ในผู้ป่วยที่มีอาการของตับผิดปกติ</p>
+            </div>
+
+            <div class="details-block block-7">
+                <h3>อาการไม่พึงประสงค์ <span class="en-text">(Adverse reaction)</span></h3>
+                <p>อาจทำให้เกิดอาการผิดปกติของทางเดินอาหาร เช่น ปวดท้อง ท้องเสีย คลื่นไส้ เบื่ออาหาร วิงเวียนศีรษะ ใจสั่น และอาจเกิดลมพิษได้</p>
+            </div>
+
+            <div class="details-block block-8">
+                <h3>สูตรตำรับ</h3>
+                <p>ผงจากส่วนเหนือดินของฟ้าทะลายโจร [Andrographis paniculata (Burm.f.) Wall.ex Nees] ที่มีสารสำคัญ total lactone โดยคำนวณเป็น andrographolide ไม่น้อยกว่าร้อยละ 6.0 โดยน้ำหนัก (w/w) และปริมาณ andrographolide ไม่น้อยกว่าร้อยละ 1.0 โดยน้ำหนัก (w/w)</p>
+            </div>
+        </div>
+
+        <div class="source-info">
+            <p>แหล่งข้อมูล = บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ.2566</p>
+        </div>
+
+          <div class="home-button-container">
+            <a href="index.html" class="home-button">กลับหน้าแรก</a>
+        </div>
+    </div>
+
+</body>
+</html>
