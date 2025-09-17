@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสมุนไพร | ชาจากอัมพฤกษ์-อัมพาต</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #388E3C;
+            --secondary-color: #A5D6A7;
+            --text-color: #424242;
+            --bg-color: #E8F5E9;
+            --card-bg: #ffffff;
+            --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2E7D32;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .medicine-button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .medicine-button:hover {
+            transform: translateY(-5px);
+            background-color: var(--secondary-color);
+        }
+
+        /* Responsive design for two columns on larger screens */
+        @media (min-width: 600px) {
+            .button-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="paralysis.html" class="back-button">← ย้อนกลับ</a>
+        <h1 class="main-heading">ยาสมุนไพรกลุ่มอาการชาจากอัมพฤกษ์-อัมพาต</h1>        
+        <div class="button-grid">
+            <a href="herbStiffnessrelief_details.html" class="medicine-button">ยาแก้ลมแก้เส้น</a>
+            <a href="herbthamlaiphraSumeru_details.html" class="medicine-button">ยาทำลายพระสุเมรุ</a>
+       </div>
+    </div>
+</body>
+</html>
